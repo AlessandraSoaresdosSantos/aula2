@@ -1,0 +1,120 @@
+/* nosso "reset" caseiro */
+body,
+main,
+div,
+img,
+p,
+h1,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 42px;
+  padding-bottom: 30px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fcf6d2;
+  /* Verdana no corpo inteiro ;) */
+  font-family: Verdana, sans-serif;
+}
+
+/* mais espaço pro conteúdo */
+main {
+  max-width: 100vw;
+  padding: 30px;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  color: #91461d;
+  background-image: url("https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  border: 2px solid #000000;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #91461d;
+  font-weight: bold;
+  transition: background-color 300ms;
+}
+
+a:hover {
+  background-color: white;
+}
+
+a img {
+  width: 60px;
+}
+
+#container-imagens {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#container-imagens img {
+  width: calc(100% / 3);
+}
+
+nav {
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: burlywood;
+}
+
+nav a {
+  margin: 0;
+}
+
+#logo {
+  height: 40px;
+}
+
+/* tirei o width */
+footer {
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+#contador {
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  border-radius: 10px;
+}
+
+.alinhamento-vertical {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
